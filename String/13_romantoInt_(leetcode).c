@@ -35,7 +35,7 @@ char* queer_cases[6] =  {"CM", "CD" ,"XC" ,"XL" ,"IX" ,"IV"};
 	for(i = 0; i < 6; i++){
 		if(k = strstr(s, queer_cases[i])){
 			strncpy(cut, k, 2);
-            cut[2]='\0';
+            			cut[2]='\0';//问题出在这里，strncpy会自动给dest加一个\0，但在leetcode的编译器里加的是八进制的\377，这里我自己调整成\0就不会出错了
 			result += Queerint(cut);
 			strncpy(str2, k+2, strlen(k+2)+1);
             		*k = '\0';
