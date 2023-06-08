@@ -70,7 +70,7 @@
 //    }
 //
 //};
-//用
+//对链表有独特的痴迷，不过并无意义
 class Solution {
 public:
     struct ListNode {
@@ -83,7 +83,8 @@ public:
     static int fib(int n) {
 
         std::shared_ptr<struct ListNode> node_1 = std::make_shared<struct ListNode>();  //后面这个括号里应该填的是如果有构造函数情况下的参数
-        std::shared_ptr<struct ListNode> node_2 = std::make_shared<struct ListNode>();
+        std::shared_ptr<struct ListNode> node_2 = std::make_shared<struct ListNode>();//前半部分是声明指针类型，后半部分是生成这个指针本身，后半部分其实就是malloc语句
+	//根据VS的提示，class中声明为static的数据是不可以在类中直接初始化的
 
         node_1->value = 0;
         node_1->next = node_2;
