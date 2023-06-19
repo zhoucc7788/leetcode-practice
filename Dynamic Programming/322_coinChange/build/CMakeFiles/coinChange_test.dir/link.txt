@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/coinChange_test.dir/tests/coinChange_test.cpp.o CMakeFiles/coinChange_test.dir/src/coinChange.cpp.o -o ../coinChange_test 

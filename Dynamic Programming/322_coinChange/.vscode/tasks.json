@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"options": {
+		"cwd": "${workspaceFolder}/build" //进入build文件夹的绝对路径中
+	},
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "cmake",
+			"command": "cmake",
+			"args": [
+				".."
+			]
+		},
+
+		{
+			"label": "make",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"command": "cmake",
+		},
+
+		{
+			"label": "Build",
+			"dependsOrder":"sequence",
+			"dependsOn":[
+				"cmake",
+				"make"
+			]
+		},
+	]
+}
