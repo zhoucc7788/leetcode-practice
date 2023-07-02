@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/mincostTickets_test.dir/tests/mincostTickets_test.cpp.o CMakeFiles/mincostTickets_test.dir/src/mincostTickets.cpp.o -o ../mincostTickets_test 
