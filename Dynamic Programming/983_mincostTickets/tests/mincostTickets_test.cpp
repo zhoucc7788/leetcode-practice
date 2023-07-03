@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
 #include "mincostTickets.h"
-// class Solution;
-
 
 int main()
 {
