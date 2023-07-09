@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/addTwoNumbers_test.dir/tests/addTwoNumbers_test.cpp.o CMakeFiles/addTwoNumbers_test.dir/src/addTwoNumbers.cpp.o -o ../addTwoNumbers_test 

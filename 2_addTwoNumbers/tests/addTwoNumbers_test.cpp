@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstdlib>
 #include "addTwoNumbers.h"
+
 
 int main()
 {   
@@ -22,31 +24,33 @@ int main()
 
     std::vector<ListNode*> line(num1.length(), nullptr);
     for (char s : num1){
-        line[i] = new ListNode(int(s));
+        line[i] = new ListNode(std::atoi(&s));
         i++;
     }
 
     while(i > 0){
-        line[i]->next = line[i];
         i--;
+        line[i]->next = line[i - 1];
     }
     l1 = line.back();
-    for(ListNode* element : line) free(element);
+    
+    i=0;
+    line.resize(num2.length(), nullptr);
 
-        for (char s : num2){
-        line[i] = new ListNode(int(s));
+    for (char s : num2){
+        line[i] = new ListNode(std::atoi(&s));
         i++;
     }
 
     while(i > 0){
-        line[i]->next = line[i];
         i--;
+        line[i]->next = line[i - 1];
     }
     
     l2 = line.back();
-    for(ListNode* element : line) free(element);
 
     result = sol.addTwoNumbers(l1, l2);
+
 
     std::cout << result << "\n";
     return 0;
