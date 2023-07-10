@@ -28,7 +28,7 @@ int main()
         i++;
     }
 
-    while(i > 0){
+    while(i > 1){
         i--;
         line[i]->next = line[i - 1];
     }
@@ -42,7 +42,7 @@ int main()
         i++;
     }
 
-    while(i > 0){
+    while(i > 1){
         i--;
         line[i]->next = line[i - 1];
     }
