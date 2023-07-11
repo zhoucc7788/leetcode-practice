@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/minSteps_test.dir/tests/minSteps_tests.cpp.o CMakeFiles/minSteps_test.dir/src/minSteps.cpp.o -o ../minSteps_test 

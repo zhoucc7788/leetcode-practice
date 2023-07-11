@@ -1,0 +1,3 @@
+/home/zcc/git/leetcode-practice/Dynamic Programming/650_minSteps/build/CMakeFiles/minSteps_test.dir
+/home/zcc/git/leetcode-practice/Dynamic Programming/650_minSteps/build/CMakeFiles/edit_cache.dir
+/home/zcc/git/leetcode-practice/Dynamic Programming/650_minSteps/build/CMakeFiles/rebuild_cache.dir
