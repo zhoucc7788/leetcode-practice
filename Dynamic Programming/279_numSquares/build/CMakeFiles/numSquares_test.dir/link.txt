@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/numSquares_test.dir/tests/numSquares_tests.cpp.o CMakeFiles/numSquares_test.dir/src/numSquares.cpp.o -o ../numSquares_test 

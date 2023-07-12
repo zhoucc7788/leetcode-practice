@@ -1,0 +1,3 @@
+/home/zcc/git/leetcode-practice/Dynamic Programming/279_numSquares/build/CMakeFiles/numSquares_test.dir
+/home/zcc/git/leetcode-practice/Dynamic Programming/279_numSquares/build/CMakeFiles/edit_cache.dir
+/home/zcc/git/leetcode-practice/Dynamic Programming/279_numSquares/build/CMakeFiles/rebuild_cache.dir
