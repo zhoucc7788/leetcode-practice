@@ -2,7 +2,9 @@
 #include <vector>
 #include <algorithm>
 
-class Solution{
+
+
+class Solution {
 public:
     int numSquares(int n);
 };
