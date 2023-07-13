@@ -14,9 +14,10 @@ int Solution::numSquares(int n){
     }
 
     for(int i = 1; i <= n; i++){
-        for (int j = i; j > i/2; j--)
-        minSquaresnum[i] = std::min(minSquaresnum[i - j] + minSquaresnum[j], minSquaresnum[i]);
-
+        for (int j = i; j > 0; j--){ 
+            if((minSquaresnum[i - j] < minSquaresnum[i]) && (minSquaresnum[j] < minSquaresnum[i]))
+                minSquaresnum[i] = std::min(minSquaresnum[i - j] + minSquaresnum[j], minSquaresnum[i]);
+        }        
     }
 
     return minSquaresnum[n];
