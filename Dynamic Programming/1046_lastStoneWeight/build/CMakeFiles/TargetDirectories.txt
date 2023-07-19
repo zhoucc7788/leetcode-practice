@@ -1,0 +1,3 @@
+/home/zcc/git/leetcode-practice/Dynamic Programming/1046_lastStoneWeight/build/CMakeFiles/lastStoneWeight_test.dir
+/home/zcc/git/leetcode-practice/Dynamic Programming/1046_lastStoneWeight/build/CMakeFiles/edit_cache.dir
+/home/zcc/git/leetcode-practice/Dynamic Programming/1046_lastStoneWeight/build/CMakeFiles/rebuild_cache.dir
