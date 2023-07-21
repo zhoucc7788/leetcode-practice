@@ -19,11 +19,6 @@ int main()
         stones.emplace_back(int(stone));  // 将读取的整数添加到vector中
     }
 
-    printf("\n");
-    for(int stone : stones){
-        std::cout<< stone <<std::endl;
-    }    
-
     result = sol.lastStoneWeight(stones);
 
     std::cout << result << "\n";
