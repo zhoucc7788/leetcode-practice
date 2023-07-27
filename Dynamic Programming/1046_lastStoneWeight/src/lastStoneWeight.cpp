@@ -5,20 +5,22 @@
 
 
 int Solution::lastStoneWeight(std::vector<int>& stones){
-    std::set<int> stoneSet(stones.begin(), stones.end());
+    std::sort(stones.begin(), stones.end());
     int stone_1, stone_2;
 
-    for(std::set<int>::reverse_iterator it = stoneSet.rbegin(); stoneSet.size() > 1; it++){
+    while(stones.size() > 1){
+        std::sort(stones.begin(), stones.end());
+        std::vector<int>::reverse_iterator it =stones.rbegin();
         stone_1 = *it;
         it++;
         stone_2 = *it;
-        stoneSet.emplace(stone_1 - stone_2);
-        it++;
-        stoneSet.erase(stone_1);
-        stoneSet.erase(stone_2);
+        stones.pop_back();
+        stones.pop_back();
+        stones.push_back(stone_1 - stone_2);
     }
-    if (!stoneSet.empty())
-        return *(stoneSet.begin());
+
+    if (!stones.empty())
+        return *(stones.begin());
     else
         return 0;
 }
