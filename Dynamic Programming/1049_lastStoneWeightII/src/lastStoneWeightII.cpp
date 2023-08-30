@@ -1,25 +1,30 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <numeric>
 #include "lastStoneWeightII.h"
 
-int Solution::lastStoneWeightII(std::vector<int>& stones){
+int Solution::lastStoneWeightII(std::vector<int> &stones)
+{
     std::sort(stones.begin(), stones.end());
-    int stone_1, stone_2;
+    int sum = std::accumulate(stones.begin(), stones.end(), 0);
+    int target = sum / 2;
+    std::vector<int> dp(target + 1, 0);
 
-    while(stones.size() > 1){
-        std::sort(stones.begin(), stones.end());
-        std::vector<int>::reverse_iterator it =stones.rbegin();
-        stone_1 = *it;
-        it++;
-        stone_2 = *it;
-        stones.pop_back();
-        stones.pop_back();
-        stones.push_back(stone_1 - stone_2);
+    for (int stone : stones)
+    {
+        for (int j = target; j >= stone; j--)
+        {
+            if (j < stone)
+            {
+                dp[j] = dp[j - 1];
+            }
+            else
+            {
+                dp[j] = std::max(dp[j], dp[j - stone] + stone);
+            }
+        }
     }
 
-    if (!stones.empty())
-        return *(stones.begin());
-    else
-        return 0;
+    return sum - 2 * dp[target];
 }
