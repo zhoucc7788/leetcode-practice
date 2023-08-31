@@ -15,11 +15,7 @@ int Solution::lastStoneWeightII(std::vector<int> &stones)
     {
         for (int j = target; j >= stone; j--)
         {
-            if (j < stone)
-            {
-                dp[j] = dp[j - 1];
-            }
-            else
+            if (j >= stone)
             {
                 dp[j] = std::max(dp[j], dp[j - stone] + stone);
             }

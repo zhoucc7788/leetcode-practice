@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/lastStoneWeightII_test.dir/tests/lastStoneWeightII_test.cpp.o CMakeFiles/lastStoneWeightII_test.dir/src/lastStoneWeightII.cpp.o -o ../lastStoneWeightII_test 

@@ -19,7 +19,7 @@ int main()
         stones.emplace_back(int(stone));  // 将读取的整数添加到vector中
     }
 
-    result = sol.lastStoneWeight(stones);
+    result = sol.lastStoneWeightII(stones);
 
     std::cout << result << "\n";
     return 0;
