@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/findTargetSumWays_test.dir/tests/findTargetSumWays_test.cpp.o CMakeFiles/findTargetSumWays_test.dir/src/findTargetSumWays.cpp.o -o ../findTargetSumWays_test 
