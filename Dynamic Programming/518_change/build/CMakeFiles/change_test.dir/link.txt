@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/change_test.dir/tests/change_test.cpp.o CMakeFiles/change_test.dir/src/change.cpp.o -o ../change_test 
