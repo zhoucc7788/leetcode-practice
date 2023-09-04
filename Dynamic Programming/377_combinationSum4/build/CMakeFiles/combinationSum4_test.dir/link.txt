@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wall -g -rdynamic CMakeFiles/combinationSum4_test.dir/tests/combinationSum4_tests.cpp.o CMakeFiles/combinationSum4_test.dir/src/combinationSum4.cpp.o -o ../combinationSum4_test 
